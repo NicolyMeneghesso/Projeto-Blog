@@ -1,0 +1,80 @@
+.partnership-page {
+    
+    .banner_text {  
+        margin-right: 8px;
+        
+        .banner_title {
+            margin: 50px 0px 40px 60px;
+            color: #e912c5;
+            font: italic 55px Candara;
+            text-align: center;
+        }
+    
+        .banner_content  {
+            flex: 1;
+            text-align: justify;
+            text-align-last: left;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .content-imags {
+        float: left;
+        width: 415px;
+
+        .banner_imgs {
+            margin: -25px 0 35px 0; 
+            flex-direction: row; /* Empilhar as imagens verticalmente */
+
+            .img5, .img6, .img7 {
+                border-radius: 10px;
+                border: 3px solid #8b358b;
+            }
+
+            &:hover .img5 {
+                opacity: .8;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .flip-card-inner {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 #0000001a;
+    
+        .flip-card-front, .flip-card-backs {
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+    
+        .flip-card-front img {
+            display: block; 
+            border-radius: 21px;
+        }
+    }
+
+    .flip-card-backs { /* este codigo é referente ao card da pagina partnership */
+        transform: rotateY(180deg); 
+        position: absolute;
+        top: 0;
+        left: 60px;
+        backface-visibility: hidden;    
+        border-radius: 10px;
+        display: flex;
+        align-items: left;
+    }
+}

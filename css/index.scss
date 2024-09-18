@@ -1,0 +1,65 @@
+.home-page {
+    
+    .banner_text { /* titulo */
+        font: italic 46px Candara;
+        letter-spacing: 4px;
+        color: #e912c5;
+        float: left;
+        text-align: center;
+        padding-top: 280px;
+        width: 679px;
+    }
+
+    .banner_img {
+        opacity: 0.85;
+        border: 3px solid #8b358b;
+        border-radius: 18px;
+        width: 400px;
+        float: left;
+        margin-top: 30px;
+
+        p { /* Card atrás da foto */
+            font: 22px Segoe UI;
+            text-align: center;
+            padding: 10px 10px;
+        }
+
+        &:hover {
+            opacity: .8;
+            cursor: pointer;
+        }
+    }
+
+    .flip-card-inner {
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 8px 0 #0000001a;
+    
+        .flip-card-front, .flip-card-back {
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+    
+        .flip-card-front img {
+            display: block; 
+            border-radius: 21px;
+        }
+    }
+    .flip-card-back { /*card parte de trás da pag home */
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        background-color: #be55be;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+    }
+}
+

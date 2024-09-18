@@ -1,0 +1,92 @@
+.legacy-page {
+
+    .banner_text {
+        .banner_title {
+            margin: 10px 50px 50px 0px;
+            color: #e912c5;
+            font: italic 55px Candara;
+            text-align: center;
+        }
+    
+        .banner_content {
+            text-align: left;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            
+            h3 {
+                font-size: 25px;
+            }
+
+            p {
+                font-size: 18px;
+                text-align: justify; 
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .content-imgs{
+        display: flex;
+        justify-content: space-around; /* Altere conforme necessário */
+        align-items: flex-start;
+        flex-wrap: wrap;
+        
+        .banner_imgs {
+            opacity: 0.85;
+            border-radius: 18px;
+            margin-top: 25px;
+            
+            &:hover {
+                opacity: .8;
+                cursor: pointer;
+            }
+        }  
+    }  
+
+    .card {
+        position: relative;
+        height: 300px;
+        width: 300px;
+        margin: 5px;
+    }
+
+    .card .flip-card-inner {
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .card-front img {
+        display: block; 
+        border-radius: 10px;
+    }
+    
+    .card-front, .card-back {
+        position: absolute;
+        backface-visibility: hidden;
+        border-radius: 10px;
+    }
+
+    .card-back {
+        transform: rotateY(180deg);
+        background-color: #be55be;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 14px 10px 14px;
+        height: 300px;
+    }
+
+    .card-back h5 {
+        font-family: Arial, Helveti ca, sans-serif;
+        font-size: 20px;
+        text-align: center; /* Use center se quiser que tudo esteja centralizado */
+        color: #111010; /* Cor do texto para contraste */
+    }
+
+    .card-back p {
+        font-family: Arial, Helveti ca, sans-serif;
+        font-size: 15px;
+        text-align: left; /* Use center se quiser que tudo esteja centralizado */
+        color: #111010; /* Cor do texto para contraste */
+    }
+}
