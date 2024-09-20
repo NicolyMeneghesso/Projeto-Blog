@@ -1,0 +1,88 @@
+.legacy-page .banner_text .banner_title {
+    margin: 10px 50px 50px 0px;
+    color: #e912c5;
+    font: italic 55px Candara;
+    text-align: center;
+}
+
+.legacy-page .banner_text .banner_content {
+    text-align: left;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+.legacy-page .banner_text .banner_content h3 {
+    font-size: 25px;
+}
+
+.legacy-page .banner_text .banner_content p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.legacy-page .content-imgs {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.legacy-page .content-imgs .banner_imgs {
+    opacity: 0.85;
+    border-radius: 18px;
+    margin-top: 25px;
+}
+
+.legacy-page .content-imgs .banner_imgs:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.legacy-page .card {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+}
+
+.legacy-page .card .flip-card-inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.legacy-page .card-front img {
+    display: block;
+    border-radius: 10px;
+}
+
+.legacy-page .card-front,
+.legacy-page .card-back {
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+.legacy-page .card-back {
+    transform: rotateY(180deg);
+    background-color: #be55be;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 14px 10px 14px;
+    height: 300px;
+}
+
+.legacy-page .card-back h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #111010;
+}
+
+.legacy-page .card-back p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #111010;
+}

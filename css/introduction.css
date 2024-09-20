@@ -1,0 +1,35 @@
+.introduction-page .banner_text .banner_title {
+    margin: 10px 50px 50px 0px;
+    color: #e912c5;
+    font: italic 55px Candara;
+    text-align: center;
+}
+
+.introduction-page .banner_text .banner_content {
+    text-align: left;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+}
+
+.introduction-page .banner_text .banner_content h3 {
+    font-size: 25px;
+}
+
+.introduction-page .banner_text .banner_content p {
+    font-size: 18px;
+    width: 50%;
+    text-align: justify;
+}
+
+.introduction-page .banner_imgs {
+    border: 3px solid #8b358b;
+    float: right;
+    margin: -560px 50px 0 0;
+    border-radius: 10px;
+    height: 574px;
+}
+
+.introduction-page .banner_imgs img {
+    border-radius: 8px;
+}
