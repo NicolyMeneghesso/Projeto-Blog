@@ -15,10 +15,6 @@ h1 {
     text-align: center;
 }
 
-p {
-    font-family: 'Poppins', sans-serif;
-}
-
-h5 {
+p, h5 {
     font-family: 'Poppins', sans-serif;
 }
