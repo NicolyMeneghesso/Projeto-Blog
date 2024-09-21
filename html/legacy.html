@@ -1,96 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Meu Primeiro Blog</title>
-		
-		<link rel="stylesheet" href="../css/body-project.css"> 
-		<link rel="stylesheet" href="../css/legacy.css">
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/body.css">
+    <link rel="stylesheet" href="../css/legacy.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Projeto Blog</title>
+</head>
 
-    <body>
-        <div class="legacy-page">
-            <div class="banner_text">
-                <div class="banner_title">
-                    O Legado Duradouro de Ada Lovelace
-                </div>
-                <div class="banner_content">
-                    <h3>Reconhecimento de uma Visionária na Era Digital</h3>
-                    <br>
+<body>
+
+    <!-- Navegação -->
+    <nav class="navigation">
+        <div class="nav-inner">
+            <div class="menu-toggle" onclick="menuFn(this)">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </div>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-menu-list">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="introduction.html">Sua História</a></li>
+                <li><a href="partnership.html">Parceria com Babbage</a></li>
+                <li><a href="legacy.html">Legado e Reconhecimento</a></li>
+            </ul>
+        </div>
+        <script>
+            function menuFn(x) {
+                x.classList.toggle("change");
+                document.getElementById("nav-menu").classList.toggle("open-menu");
+            }
+        </script>
+    </nav>
+
+    <div class="rectangle-1"></div> 
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <h1 class="mt-5">O Legado Duradouro de Ada Lovelace</h1>
+            <div class="col-lg-8">
+                <div class="legacy-text text-white">
                     <p>
-                        O reconhecimento tardio da genialidade de Ada Lovelace destacou a importância de suas contribuições para a tecnologia. 
-                        Seu trabalho visionário, que foi além dos números, abriu caminho para a programação moderna e a criação de máquinas 
-                        que não apenas calculam, mas também criam música, arte e muito mais. Assim como Ada Lovelace, outras mulheres programadoras notáveis, como:
+                        O reconhecimento tardio da genialidade de Ada Lovelace destacou a importância de suas contribuições
+                        para a tecnologia. Seu trabalho visionário abriu caminho para a programação moderna e a criação de máquinas
+                        que não apenas calculam, mas também criam música, arte e muito mais.
                     </p>
-            </div>
-            
-            <div class="content-imgs">
-                <div class="banner_imgs" onclick="flipCard(this)">
-
-                    <article class = "card">
-                        <div class="flip-card-inner">
-                            <section class = "card-front">
-                                <img src="../images/img9.png" width="300px" alt="img9">
-                            </section>
-
-                            <section class = "card-back">
-                                <h5><strong>Mary Kenneth Keller <br> (1913-1985): </strong></h5>
-                                <br>
-                                <p>Primeira mulher a obter um doutorado em Ciência da Computação.<br>
-                                    <br>Contribuiu para o desenvolvimento de linguagens de programação.<br>
-                                    <br>Fez pioneirismo em sistemas operacionais.
-                                </p>
-                            </section>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="banner_imgs" onclick="flipCard(this)">
-                    <article class = "card">
-                        <div class="flip-card-inner">
-                            <section class = "card-front">
-                                <img src="../images/img11.png" width="320px" alt="img11">
-                            </section>
-
-                            <section class = "card-back">
-                                <h5><strong>Grace Murray Hopper <br>(1906-1992):</strong></h5>
-                                <br>
-                                <p>Criou o termo "bug" para falhas em computadores.<br> 
-                                    <br>Desenvolveu a linguagem COBOL e sistemas de bancos de dados.<br>
-                                    <br>Trabalhou extensivamente em sistemas de processamento de informações.
-                                </p>
-                            </section>
-                        </div>
-                    </article>
-                </div>
-
-                <div class="banner_imgs" onclick="flipCard(this)">
-                    <article class = "card">
-                        <div class="flip-card-inner">
-                            <section class = "card-front">
-                                <img src="../images/img10.png" width="250px" alt="img10">
-                            </section>
-
-                            <section class = "card-back">
-                                <h5><strong>Hedy Lamarr <br>(1914-2000):</strong></h5>
-                                <br>
-                                <p>Inventou tecnologia de interferência em rádio durante a Segunda Guerra.<br> 
-                                    <br>Suas contribuições foram fundamentais para conexões Wi-Fi e CDMA.<br>
-                                    <br>Recebeu reconhecimento tardio por suas inovações tecnológicas.
-                                </p>
-                            </section>
-                        </div>
-                    </article>
-
                 </div>
             </div>
-        </div>  
+        </div>
 
-        <script src="../js/menu.js"></script>
-		<script src="../js/flip-card.js"></script>
-      
-    </body>
+        <!-- Imagens com flip-card -->
+        <div class="row mt-5 justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+                <div class="card banner_imgs" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="../images/img9.png" class="img-fluid rounded" alt="img9">
+                        </div>
+                        <div class="card-back p-3">
+                            <h5><strong>Mary Kenneth Keller <br> (1913-1985)</strong></h5>
+                            <p>Primeira mulher a obter um doutorado em Ciência da Computação. Contribuiu para o desenvolvimento de linguagens de programação e sistemas operacionais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+                <div class="card banner_imgs" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="../images/img11.png" class="img-fluid rounded" alt="img11">
+                        </div>
+                        <div class="card-back p-3">
+                            <h5><strong>Grace Murray Hopper <br> (1906-1992)</strong></h5>
+                            <p>Criou o termo "bug" para falhas em computadores. Desenvolveu a linguagem COBOL e sistemas de bancos de dados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex justify-content-center mb-4">
+                <div class="card banner_imgs" onclick="flipCard(this)">
+                    <div class="flip-card-inner">
+                        <div class="card-front">
+                            <img src="../images/img10.png" class="img-fluid rounded" alt="img10">
+                        </div>
+                        <div class="card-back p-3">
+                            <h5><strong>Hedy Lamarr <br> (1914-2000)</strong></h5>
+                            <p>Inventou tecnologia de interferência em rádio durante a Segunda Guerra. Suas contribuições foram fundamentais para conexões Wi-Fi e CDMA.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="rectangle-2"></div> 
+
+    <script src="../js/flip-card.js"></script>
+
+</body>
 
 </html>

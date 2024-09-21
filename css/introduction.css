@@ -1,35 +1,46 @@
-.introduction-page .banner_text .banner_title {
-    margin: 10px 50px 50px 0px;
-    color: #e912c5;
-    font: italic 55px Candara;
-    text-align: center;
+.rectangle {
+    position: absolute;
+    left: 5%;
+    width: 90%; 
+    height: 100%;
+    background: linear-gradient(185deg,
+                    rgb(36, 0, 61) 5%,   
+                    rgb(50, 10, 85) 45%,  
+                    rgb(70, 15, 100) 65%, 
+                    rgb(60, 10, 80) 100%);
+    clip-path: inset(4% round 40px);
+    z-index: -1; 
 }
 
-.introduction-page .banner_text .banner_content {
-    text-align: left;
-    color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.4;
+/* Título Principal */
+h1 {
+    padding-top: 4%;
 }
 
-.introduction-page .banner_text .banner_content h3 {
-    font-size: 25px;
+.introduction-text {
+    color: rgb(254, 254, 254);
+    font-size: 20px; 
+    margin-bottom: 20px; 
+    text-align: justify; 
+    line-height: 1.6; 
+    width: 90%;
+    padding: 1.5%;
+    margin-left: 18%;
 }
 
-.introduction-page .banner_text .banner_content p {
-    font-size: 18px;
-    width: 50%;
-    text-align: justify;
+/* Imagem */
+.introduction-img {
+    border-radius: 10px; 
+    max-width: 400px; 
+    margin: 0 auto; 
+    margin-top: 4%;
+    padding: 1%;
 }
 
-.introduction-page .banner_imgs {
-    border: 3px solid #8b358b;
-    float: right;
-    margin: -560px 50px 0 0;
-    border-radius: 10px;
-    height: 574px;
-}
-
-.introduction-page .banner_imgs img {
-    border-radius: 8px;
+.img-introd {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    border-radius: 10px; 
 }
